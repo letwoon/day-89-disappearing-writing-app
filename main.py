@@ -44,6 +44,7 @@ description_label = Label(top, text="If you stop, your writing will be vanish af
 description_label.pack(side=BOTTOM)
 
 text_area = Text(middle, bd=0, bg="#FFFFFF", font=(FONT_NAME, 16), width=50, height=10)
+text_area.focus()
 text_area.pack(side=LEFT)
 vscroll = Scrollbar(middle, orient=VERTICAL, command=text_area.yview)
 text_area["yscroll"] = vscroll.set
